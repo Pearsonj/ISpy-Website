@@ -5,7 +5,9 @@
     height: 48%;
     position: absolute;
     cursor: url('../../photos/find\ \(2\).png'), auto;
+   
 }
+
 
 .navItems{
     display: inline-flex;
@@ -17,7 +19,12 @@
     text-shadow: 0px 0px 20px white;
     padding: 0;
     cursor: url('../../photos/find\ \(2\).png'), auto;
+    background: inherit;
+    
+    
 }
+
+
 
 .navItems:hover{
     cursor: url('../../photos/find\ \(2\).png'), auto;
