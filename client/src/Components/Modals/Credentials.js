@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
+import './credentials.css'
 
 const CredentialModal = props => {
       return (
-        <div className="about" style={{backgroundColor: 'white', color: 'black'}}>
+        <div className="credentials" style={{backgroundColor: '#731313fc', color: 'white', height: '500px', overflowY: 'auto', borderRadius: '10px'}}>
         This is the CredentialModal modal
         </div>
       );

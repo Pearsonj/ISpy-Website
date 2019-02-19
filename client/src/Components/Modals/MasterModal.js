@@ -19,7 +19,7 @@ const MasterModal = (props) => {
             currentModal = <Email/>
             break;
         default:
-            currentModal = 'hey';
+            currentModal = '';
     }
     
     return (
@@ -49,7 +49,7 @@ const MasterModal = (props) => {
                 // onClick={() => props.changeModal('')}
             >
                 {currentModal}
-                <span onClick={() => props.changeModal('')} style={{color: 'red', position: 'absolute', top: '5px', right: '10px' }}>X</span>
+                <span onClick={() => props.changeModal('')} style={{color: 'red', position: 'absolute', top: '15px', right: '20px'}}>X</span>
             </div>
             
         </div>

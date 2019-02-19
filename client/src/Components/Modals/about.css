@@ -1,0 +1,11 @@
+.about{
+    text-align: center;
+    border-style: ridge;
+    border-color: black;
+    border-width: 3px;
+}
+
+.aboutTxt{
+    font-size: 20px;
+    padding: 1em;
+}

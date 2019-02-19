@@ -37,6 +37,7 @@ class App extends Component {
       <div>
       <MasterModal
       currentModal={this.state.currentModal}
+      changeModal={this.changeModal}
       />
       <NavLinks 
       changeModal={this.changeModal}
