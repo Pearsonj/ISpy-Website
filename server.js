@@ -15,9 +15,11 @@ app.post('/api/form', (req, res) => {
       <ul>
       <li>Name: ${req.body.name}</li>
       <li>Phone Number: ${req.body.phoneNumber}</li>
+      <li>email: ${req.body.email}</li>
       <li>Address: ${req.body.address}
       <li>City: ${req.body.city}</li>
       <li>Square Ft: ${req.body.sqft}</li>
+      <li>Realtor?: ${req.body.realtor}</li>
       </ul>
       <h3>Message:</h3>
       <p>${req.body.message}</p>
