@@ -21,8 +21,8 @@
     padding: 0;
     margin: 0;
     font-size: 1.1rem;
-    font-family: 'Lekton', sans-serif;
-    font-weight: 800;
+    font-family: 'Staatliches', cursive;
+    line-height: 40px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -48,7 +48,7 @@
         padding: 0;
         margin: 0;
         font-size: 1rem;
-        font-family: 'Lekton', sans-serif;
+        font-family: 'Staatliches', cursive;
         font-weight: 800;
     }
     

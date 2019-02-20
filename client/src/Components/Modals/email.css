@@ -1,0 +1,40 @@
+.email{
+    text-align: center;
+    justify-content: space-around;
+    border-style: ridge;
+    border-color: black;
+    border-width: 3px;
+}
+
+Input {
+    width: 75%;
+}
+
+input[type=text] { 
+    text-align:center 
+}
+
+.formgroup{
+    margin-top: 2.5%;
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+}
+
+.emailHeader{
+    font-family: 'Staatliches', cursive;
+}
+
+textarea{
+    width: 75%;
+    height: 50px;
+}
+
+Button{
+    margin: 20px;
+    font-size: 2.5em;
+    background-color: black;
+    color: white;
+    font-family: 'Staatliches', cursive;
+    border-radius: 15px;
+    border-color: red;
+}
