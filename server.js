@@ -34,10 +34,10 @@ app.post('/api/form', (req, res) => {
      });
 
     let mailOptions = {
-      from: 'A new inspection',
+      from: `${req.body.email}`,
       to: 'ispyemails@gmail.com',
-      replyTo: 'give em a call',
-      subject: 'New Inspection',
+      replyTo: `${req.body.email}`,
+      subject: 'A New Inspection From ' + `${req.body.name}`,
       text: req.body.message,
       html: htmlEmail
     }
