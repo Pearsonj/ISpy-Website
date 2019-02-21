@@ -5,8 +5,8 @@ import './logo.css'
 const Logo = props => {
       return (
         <div className="logoContainer">
-            <h1 className="logo">ISpy Home Inspections</h1>
-            <p className="mission">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra massa massa ultricies mi quis hendrerit dolor magna. Nullam non nisi est sit amet facilisis magna etiam. Ornare massa eget egestas purus. Tortor condimentum lacinia quis vel eros donec. Risus commodo viverra maecenas accumsan lacus.</p>
+            <h1 className="logo">I Spy Home Inspections</h1>
+            <p className="mission">Here at I Spy our goal is to empower you with the knowledge you need to be more confident in one of the biggest moments in your life, buying a home. As well as to provide knowledge to those selling by letting you know the ins and outs of the home you already posses. We are here to answer any and all questions about your home with 30 years of knowledege to back it.</p>
         </div>
       );
     }

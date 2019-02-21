@@ -22,7 +22,8 @@
     margin: 0;
     font-size: 1.1rem;
     font-family: 'Staatliches', cursive;
-    line-height: 40px;
+    line-height: 35px;
+    margin-right: 5px;
 }
 
 @media only screen and (max-width: 768px) {
