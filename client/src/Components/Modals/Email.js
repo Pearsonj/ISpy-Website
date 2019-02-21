@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './email.css'
-import {Form, FormGroup, Input, Label, Button} from 'reactstrap'
+import {Form, FormGroup, Input, Label, Button, Alert} from 'reactstrap'
 // import 'bootstrap/dist/css/bootstrap.css'
 import axios from 'axios'
 
@@ -27,6 +27,7 @@ class EmailModal extends Component {
       }
 
       async handleSubmit(e) {
+        e.preventDefault();
         const {name, phoneNumber, message, address, sqft, city, email, realtor} = this.state
         const form = await axios.post('/api/form', {
           name, 
@@ -110,7 +111,6 @@ class EmailModal extends Component {
           </FormGroup>
 
           <Button>Submit</Button>
-
         </Form>
       );
       }

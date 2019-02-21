@@ -16,7 +16,9 @@ const MasterModal = (props) => {
             currentModal = <Credentials />
             break;
         case 'Email':
-            currentModal = <Email/>
+            currentModal = <Email
+                            changeModal={props.changeModal}
+                            />
             break;
         default:
             currentModal = '';
