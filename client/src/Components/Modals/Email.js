@@ -16,7 +16,8 @@ class EmailModal extends Component {
           sqft: '',
           city: '',
           email: '',
-          realtor: ''
+          realtor: '',
+          emailSent: false
         }
         this.handleChange = this.handleChange.bind(this)
         this.handleSubmit =this.handleSubmit.bind(this)
@@ -25,7 +26,7 @@ class EmailModal extends Component {
       handleChange = e => {
         this.setState({ [e.target.name]: e.target.value })
       }
-
+     
       async handleSubmit(e) {
         e.preventDefault();
         const {name, phoneNumber, message, address, sqft, city, email, realtor} = this.state
@@ -38,11 +39,14 @@ class EmailModal extends Component {
           city,
           email,
           realtor
-        })
+        }).then(setTimeout(function changeState(){this.setState({emailSent: true})}.bind(this), 1000))
       }
 
-      render(){
+  render(){
+    
+    if(this.state.emailSent === false){
       return (
+        
         <Form className="email" onSubmit={this.handleSubmit} style={{backgroundColor: '#731313fc', color: 'white', height: '500px', overflowY: 'auto'}}>
           <h3 className="emailHeader">Give Us A little information about your home and a way to contact you and we will get back to you as soon as possible to set up a time for your inspection</h3>
 
@@ -113,6 +117,9 @@ class EmailModal extends Component {
           <Button>Submit</Button>
         </Form>
       );
+    }else if(this.state.emailSent === true){
+      return <div className="email" style={{backgroundColor: '#731313fc', color: 'white', height: '500px', overflowY: 'auto'}}><h1>Thank You! We Will Speak With You Soon!</h1></div>
+    }
       }
     }
 
